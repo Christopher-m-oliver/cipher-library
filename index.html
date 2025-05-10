@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cipher Library - Login</title>
+  <link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></head>
+<body>
+  <main class="container">
+    <!-- Tela de Login -->
+    <section id="login-panel" class="panel active">
+      <div class="login-container">
+    <div class="mascote">
+        <img src="Mascote.jpg" alt="Mascote do Cipher Library" />
+        <div class="logo-text">Cipher Library</div>
+    </div>
+
+      <form>
+        <label for="login-user">Usuário ou Email</label>
+        <input type="text" id="login-user" required />
+
+        <label for="login-pass">Senha</label>
+        <input type="password" id="login-pass" required />
+
+        <div class="options">
+          <label><input type="checkbox" /> Lembrar de mim</label>
+          <a href="#">Esqueceu a senha?</a>
+        </div>
+
+        <button type="submit">Entrar</button>
+
+        <p class="switch-text">
+          Não tem uma conta?
+          <a href="#" id="to-register">Registrar-se</a>
+        </p>
+      </form>
+    </section>
+
+    <!-- Tela de Registro -->
+    <section id="register-panel" class="panel">
+      <h1>Registrar</h1>
+      <form>
+        <label for="register-user">Usuário</label>
+        <input type="text" id="register-user" required />
+
+        <label for="register-email">Email</label>
+        <input type="email" id="register-email" required />
+
+        <label for="register-pass">Senha</label>
+        <input type="password" id="register-pass" required />
+
+        <button type="submit">Registrar</button>
+
+        <p class="switch-text">
+          Já tem uma conta?
+          <a href="#" id="to-login">Voltar para login</a>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
